@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -pA1 | sort -df | tr '\n' ',' && echo
+(ls -pA1 | sort -df | tr '\n' ',' | tr -d '\n'; echo)
