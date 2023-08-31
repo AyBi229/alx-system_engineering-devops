@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo ln -sf --owner=vincent --group=staff hello _hello
+sudo chown $(stat -c '%U:%G' hello) _hello
